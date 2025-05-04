@@ -1,0 +1,10 @@
+.about-page {
+    background-image: url('../assets/aboutbackground.jpeg'); /* veya public klasörden: /images/contact-bg.jpg */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    padding: 2rem;
+    color: white; /* yazıların görünürlüğü için */
+  }
+  

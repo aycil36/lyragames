@@ -1,0 +1,47 @@
+.user-page {
+  text-align: center;
+  padding: 40px;
+  background-color: #191f5f;
+  background-size: contain;
+  background-position: center top;
+  min-height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.user-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 70px;               /* Mesafe yeterli ama 70px çok fazlaysa düşürebilirsin */
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 600px;        /* 2 kart için mantıklı genişlik */
+}
+
+.user-card {
+  background: rgba(0, 0, 0, 0.20);
+  backdrop-filter: blur(5px);
+  border-radius: 10px;
+  padding: 20px;
+  width: 250px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.038);
+  transition: transform 0.3s ease;
+}
+
+.user-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.4);
+}
+
+.user-card h3 {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #ffc107;
+}
+
+.user-card p {
+  margin: 6px 0;
+  font-size: 14px;
+}

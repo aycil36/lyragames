@@ -1,0 +1,102 @@
+.homepage {
+  text-align: center;
+  margin-top: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('/src/assets/starrybackground.jpg'); /* Arka plan resmi */
+  background-size: cover; /* Resmi tam ekran kaplayacak şekilde ayarla */
+  background-position: center; /* Resmi ortala */
+  background-repeat: no-repeat; /* Tekrar etmesin */
+  position: relative; /* İçeriklerin üstte kalması için */
+  z-index: 1; /* İçeriklerin üstte kalmasını sağlar */
+}
+
+.homepage h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.actions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.actions button {
+  width: 200px;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: #000000;
+  background-color: #dd97e1;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.actions button:hover {
+  background-color: #0056b3;
+}
+
+.actions button:active {
+  background-color: #003f7f;
+}
+
+/* GamePage için stiller */
+.game-page {
+  padding: 20px;
+}
+
+.game-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+}
+
+
+/* GameCard için stiller */
+.game-card {
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+  width: 200px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.game-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.game-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.game-title {
+  font-size: 18px;
+  margin: 10px 0;
+  color: #333;
+}
+
+.play-button {
+  display: inline-block;
+  padding: 8px 12px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+
+.play-button:hover {
+  background-color: #0056b3;
+}

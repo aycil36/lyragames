@@ -1,0 +1,136 @@
+.homepage {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* Navbar yüksekliğini çıkar */
+  text-align: center;
+  color: white;
+  background-image: url('../assets/starrybackground.jpg'); /* Resim yolu */
+  background-size: cover; /* Resmi tam kapla */
+}
+
+  .homepage h1 {
+    font-size: 1.90rem;
+    color: #ab92e2;
+    margin-bottom: 900px;
+    text-align: center;
+    text-shadow: 1px 1px 2px #000;
+  }
+  
+
+  .actions {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+    margin-top: -700px; /* Butonları yukarı taşı */
+    z-index: 2;
+  }
+  
+  .actions button {
+    width: 200px;
+    padding: 20px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #524768;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  /* Zikzak efekti */
+.actions button:nth-child(odd) {
+  transform: translateX(-300px);
+}
+
+.actions button:nth-child(even) {
+  transform: translateX(300px);
+}
+  
+  .actions button:hover {
+    background-color: #0056b3;
+  }
+
+  .modal-content input {
+    display: block;
+    width: 90%; /* Genişliği artır */
+    margin: 10px auto; /* Ortala */
+    padding: 12px; /* İç boşlukları artır */
+    font-size: 16px; /* Yazı boyutunu büyüt */
+    border: 20px solid #9474b5; /* Kenarlık */
+    border-radius: 6px; /* Köşeleri yuvarla */
+    box-sizing: border-box; /* Kenarlık ve padding dahil */
+  }
+
+  .modal-content button {
+    width: 100px; /* Buton genişliği */
+    padding: 12px 20px; /* İç boşlukları artır */
+    font-size: 16px; /* Yazı boyutunu büyüt */
+    margin: 40px; /* Butonlar arasına boşluk ekle */
+    border: none; /* Kenarlıkları kaldır */
+    border-radius: 6px; /* Köşeleri yuvarla */
+    cursor: pointer; /* İmleci işaretçi yap */
+    transition: background-color 0.3s ease; /* Renk geçişi */
+  }
+  
+  .modal-content button:first-of-type {
+    background-color: #332571; /* Onayla butonu için yeşil */
+    color: white; /* Yazı rengi */
+  }
+  
+  .modal-content button:first-of-type:hover {
+    background-color: #2f1b70; /* Onayla butonu hover rengi */
+  }
+  
+  .modal-content button:last-of-type {
+    background-color: #231075; /* İptal butonu için kırmızı */
+    color: white; /* Yazı rengi */
+  }
+  
+  .modal-content button:last-of-type:hover {
+    background-color: #1b1b83; /* İptal butonu hover rengi */
+  }
+
+  .floating-img {
+    display: block;
+    margin: -150px auto 0 auto; 
+    left: 40%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 300px;
+    height: auto;
+    z-index: 0;
+    animation: float 2s ease-in-out infinite;
+    transition: transform 0.3s ease;
+    opacity: 0.95;
+  }
+  
+  .floating-img:hover {
+    transform: scale(1.1); /* 🪄 Hover büyüme efekti */
+  }
+
+  .centered-mascot:hover {
+    transform: scale(1.05);
+  }
+  
+  input, select, textarea {
+    background-color: black;
+    color: white;
+    border: 1px solid white;
+  }
+  
+  input::placeholder,
+  textarea::placeholder {
+    color: #ccc;
+  }
+  
+  @keyframes float {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+  }
+  
+  
+  

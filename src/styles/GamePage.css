@@ -1,0 +1,24 @@
+.game-page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: calc(100vh - 60px); /* Navbar yüksekliğini çıkar */
+  text-align: center;
+  color: white;
+  background-image: url('../assets/starrybackground.jpg'); /* Resim yolu */
+  background-size: cover; /* Resmi tam kapla */
+}
+  
+  .game-page h1 {
+    font-size: 36px;
+    color: white;
+    margin-bottom: 20px;
+  }
+  
+  .game-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+ }

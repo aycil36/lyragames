@@ -1,0 +1,146 @@
+.game-detail-page {
+  background-image: url('../assets/starrybackground.jpg');
+  background-size: cover;
+  min-height: 100vh;
+  padding: 40px;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.left-panel {
+  flex: 1;
+  text-align: center;
+}
+
+.left-panel img {
+  width: 300px;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+.right-panel {
+  flex: 2;
+}
+
+.game-detail-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 40px;
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+}
+
+.game-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(255, 255, 255, 0.3);
+}
+
+.game-info {
+  flex: 1;
+}
+
+.comment-box {
+  background-color: rgba(255, 255, 255, 0.1);
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.interact-form {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+input, select, textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  width: 100%;
+}
+
+button {
+  padding: 12px;
+  background-color: #4299e1;
+  border: none;
+  border-radius: 20px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #2b6cb0;
+}
+
+
+.game-detail-wrapper {
+  display: flex;
+  gap: 40px;
+  padding: 40px;
+  color: rgb(64, 42, 91);
+}
+.left-panel {
+  flex: 1;
+  text-align: center;
+}
+
+.right-panel {
+  flex: 2;
+  background-color: rgba(147, 110, 215, 0.05);
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.game-image {
+  width: 400px;
+  height: auto;
+  border-radius: 20px;
+  box-shadow: 0 0 12px #000000;
+}
+
+.comment-box {
+  background-color: rgba(165, 141, 232, 0.08);
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.form-box {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.form-box input, .form-box textarea, .form-box select {
+  padding: 8px;
+  border: none;
+  border-radius: 6px;
+}
+
+.form-box button {
+  background-color: #2a2a5f;
+  color: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.form-box button:hover {
+  background-color: #6f6fb9;
+}
+
+.submitted-msg {
+  color: lightgreen;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 10px;
+}
