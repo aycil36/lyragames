@@ -18,7 +18,7 @@ const userSchema = new mongoose.Schema({
   ratings: [ratingSchema],
   canRate: { type: Boolean, default: true }, // 🔐 Admin kontrolündedir
   comments: [{
-    comment: String,
+    text: String,
     playTime: Number,
     gameName: String,
     rating: Number,
