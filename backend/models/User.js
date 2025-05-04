@@ -1,5 +1,7 @@
 const mongoose = require('mongoose');
 
+
+
 // ✅ 1. Rating schema'yı tanımla
 const ratingSchema = new mongoose.Schema({
   gameId: mongoose.Schema.Types.ObjectId,
@@ -15,6 +17,12 @@ const userSchema = new mongoose.Schema({
   mostPlayedGame: { type: String, default: "" },
   ratings: [ratingSchema],
   canRate: { type: Boolean, default: true }, // 🔐 Admin kontrolündedir
+  comments: [{
+    comment: String,
+    playTime: Number,
+    gameName: String,
+    rating: Number,
+  }],
 });
 
 // Log the schema for debugging

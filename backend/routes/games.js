@@ -69,7 +69,7 @@ router.post("/:id/interact", async (req, res) => {
 
     const newComment = {
       userId: user._id,
-      username,
+      username: username,
       text: comment,
       playTime: parsedPlayTime,
       rating: parsedRating,
