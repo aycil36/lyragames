@@ -10,7 +10,6 @@ import ContactPage from "./pages/ContactPage";
 import UserPage from "./pages/UserPage";
 import LoginPage from "./pages/LoginPage";
 import UserProfile from "./pages/UserProfile";
-import EnvTest from './EnvTest';
 import config from './config'; // Import the config module
 
 // Dynamic import instead of static import
@@ -77,7 +76,6 @@ function App() {
           ))}
         </Routes>
       </Router>
-      <EnvTest />
     </div>
   );
 }
