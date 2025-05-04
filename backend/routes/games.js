@@ -95,6 +95,12 @@ router.post("/:id/interact", async (req, res) => {
     });
     user.mostPlayedGame = Object.entries(playtimeMap).sort((a, b) => b[1] - a[1])[0][0];
 
+    user.ratings.push({
+      gameId: gameId,
+      rating: parsedRating,
+      playTime: parsedPlayTime,
+    });
+
     await user.save();
     await game.save();
 
